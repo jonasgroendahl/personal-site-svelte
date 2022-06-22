@@ -16,7 +16,7 @@
         </a>
     </div>
     <div class="description">
-        <p>Specialized in Full Stack Web Development and JavaScript. I'd call myself a TypeScript, React, Node.js and React Native Developer. I have been developing apps fullstack for over 5 years now.</p>
+        <p>Specialized in Full Stack Web Development and JavaScript. I'd call myself a TypeScript, React, Node.js and React Native Developer. I have been developing apps fullstack for 6+ years</p>
         <p>I like working on side projects and testing out new tech whenever there's time for it.</p>
         <p>🇩🇰🇨🇳</p>
     </div>
