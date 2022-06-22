@@ -31,20 +31,40 @@
         <div class="content">
             <h3>{project.name}</h3>
             <p>{project.description}</p>
+            {#if project.link}
+                <a href={project.link} target="_blank">Link</a>
+            {/if}
         </div>
     </div>
     {/each}
 </div>
 
 <footer>
-   jonas.groendahlxd@gmail.com -  2021
+   jonas.groendahlxd@gmail.com -  2022
 </footer>
 
 
 <script lang="ts">
 const coverImageIndices = [2,3, 5];
 
-const projects = [
+type Project = {
+    name: string;
+    description: string;
+    platforms: string[];
+    img: string;
+    link?: string;
+    gh?: string;
+}
+
+const projects: Project[] = [
+    {
+    name: "Dansk ordbog",
+    description:
+      "Dictionary website targetted at my significant other to look up danish dictionary and get english and chinese translation with examples in the result.",
+    platforms: ["Web"],
+    link: 'https://danskordbog.vercel.app/',
+    img: "https://media.istockphoto.com/vectors/man-or-boy-reading-a-book-vector-id859583770?k=20&m=859583770&s=612x612&w=0&h=IsXIH0S2LdkT-A12xlQvJ6332pFzWH0QcpKW9IO2ppQ=",
+  },
     {
     name: "Dota 2 fans",
     description:
@@ -145,6 +165,11 @@ const projects = [
 
     .content {
         padding: 0px 20px;
+        padding-bottom: 20px;
+    }
+
+    .content a {
+        text-decoration: none;
     }
 
     .content p {
